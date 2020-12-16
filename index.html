@@ -5,22 +5,38 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <title>Group 1: Drone</title>
     <style id="applicationStylesheet" type="text/css">
-        .page1 {
+        #home {
             background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
         }
+
+        #project {
+            background: linear-gradient(180deg, rgba(24, 61, 126, 1) 0%, rgba(38, 112, 161, 1) 100%);
+        }
+
+        #sponsor {
+            background: linear-gradient(180deg, rgba(38, 112, 161, 1) 0%, rgba(24, 61, 126, 1) 100%);
+        }
+
+        #updates {
+            background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
+        }
+
+        #page4 {
+            background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
+        }
+
 
         #PROJECT {
             position: relative;
             overflow: visible;
             white-space: nowrap;
-            text-align: left;
             font-family: Open Sans;
             font-style: normal;
             font-weight: lighter;
@@ -52,7 +68,6 @@
             position: relative;
             overflow: visible;
             white-space: nowrap;
-            text-align: left;
             font-family: Open Sans;
             font-style: normal;
             font-weight: normal;
@@ -66,16 +81,20 @@
 
         .Path_1 {
             overflow: visible;
-            position: relative;
-            height: 100vh;
-            left: 0%;
+            position: absolute;
+            width: 800px;
+            height: auto;
             top: 0%;
-            transform: matrix(1, 0, 0, 1, 0, 0);
+            right: 0%;
+            z-index: 2;
         }
 
         #Image_1 {
             mix-blend-mode: multiply;
-            position: relative;
+            position: absolute;
+            right: 5%;
+            top: 25%;
+            z-index: 3;
             overflow: visible;
         }
 
@@ -83,7 +102,6 @@
             position: relative;
             overflow: visible;
             white-space: nowrap;
-            text-align: left;
             font-family: Open Sans;
             font-style: normal;
             font-weight: bold;
@@ -94,9 +112,11 @@
         /* HEADER NAVBAR */
         header {
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-            position: sticky;
+            position: fixed;
+            width: 100vw;
             top: 0px;
-
+            z-index: 5;
+            background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
         }
 
         nav {
@@ -130,96 +150,134 @@
 
         }
 
-        
+        #sponsor_divider {
+            fill: transparent;
+            stroke: rgba(255, 255, 255, 1);
+            stroke-width: 6px;
+            stroke-linejoin: miter;
+            stroke-linecap: butt;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
+        }
+
+        .sponsor_divider {
+            overflow: visible;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            height: auto;
+            width: 10%;
+        }
+
+        /*Hidding navbar*/
+        .hidden {
+            display: None;
+        }
     </style>
 </head>
 
 <body class="h-100">
+    <header id="navbar" class="hidden">
+        <nav>
+            <ul>
+                <li><a data-page="home" href="#">HOME</a></li>
+                <li><a data-page="project" href="#">PROJECT</a></li>
+                <li><a data-page="updates" href="#">UPDATES</a></li>
+                <li><a data-page="about us" href="#">ABOUT US</a></li>
+                <li><a data-page="contact" href="#">CONTACT</a></li>
+                <div class="line"></div>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="home" class="h-100 page1">
-        <div class="h-100">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div id="PROJECT" class="col-lg-6 col-md-8 mx-auto">
+    <main class="h-100">
+        <section id="home" class="h-100">
+            <div class="row h-100">
+                <div class="col-6 col-xl-6 d-flex h-100">
+                    <div id="PROJECT" class="col-lg-6 justify-content-center align-self-center">
                         <span>PROJECT</span>
                         <h1 id="FLYING_EAGLE">FLYING EAGLE</h1>
+                        <svg class="Line_1" viewBox="0 0 583 8">
+                            <path id="Line_1" d="M 0 0 L 583 0">
+                            </path>
+                        </svg>
+                        <div id="OUR_BACHELOR_PROJECT_2020_THIS">
+                            <span>OUR BACHELOR PROJECT 2020,<br />THIS PROJECT HAS BEEN DRONED</span>
+                        </div>
                     </div>
-                    <svg class="Line_1" viewBox="0 0 583 8">
-                        <path id="Line_1" d="M 0 0 L 583 0">
-                        </path>
-                    </svg>
-                    <div id="OUR_BACHELOR_PROJECT_2020_THIS">
-                        <span>OUR BACHELOR PROJECT 2020,<br />THIS PROJECT HAS BEEN DRONED</span>
-                    </div>
+
                 </div>
-                <div class="col col-md-6 d-none d-lg-block">
-                    test
-                    <svg class="Path_1" viewBox="1075.547 -228.643 882.263 1362.903">
+                <div class="col col-xl-6 d-none d-xl-block">
+                    <img class="img-fluid float-end" id="Image_1" src="img/Image_1.png"
+                        srcset="img/Image_1.png 1x, img/Image_1@2x.png 2x">
+                    <svg class="Path_1 img-fluid float-end" viewBox="1075.547 -228.643 882.263 1362.903">
                         <path id="Path_1"
                             d="M 1635.044921875 -176.4518280029297 C 1635.044921875 -176.4518280029297 1349.838623046875 -334.0596923828125 1385.748046875 -101.5028991699219 C 1421.6572265625 131.0538635253906 1125.471435546875 59.52488708496094 1082.722412109375 341.6709594726563 C 1039.97265625 623.8172607421875 1202.4208984375 541.7381591796875 1197.291015625 829.01416015625 C 1192.1611328125 1116.290771484375 1615.505004882813 1134.260009765625 1690.933471679688 1134.260009765625 C 1766.362060546875 1134.260009765625 1957.810302734375 990.0810546875 1957.810302734375 990.0810546875 L 1957.810302734375 -150.8021850585938 L 1635.044921875 -176.4518280029297 Z">
                         </path>
                     </svg>
-                   <!-- <img id="Image_1" src="img/Image_1.png" srcset="img/Image_1.png 1x, img/Image_1@2x.png 2x"> -->
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="project" class="h-100">
+
+            <!--
+            <div class="h-100">
+                <div class="row">
+
+                </div>
+                <div id="PROJECT">
+                    <span>PROJECT</span>
+                    <h1 id="FLYING_EAGLE">FLYING EAGLE</h1>
+                </div>
+                <svg class="Line_1" viewBox="0 0 583 8">
+                    <path id="Line_1" d="M 0 0 L 583 0">
+                    </path>
+                </svg>
+                <div id="OUR_BACHELOR_PROJECT_2020_THIS">
+                    <span>OUR BACHELOR PROJECT 2020,<br />THIS PROJECT HAS BEEN DRONED</span>
+                </div>
+                <svg class="Path_1" viewBox="1075.547 -228.643 882.263 1362.903">
+                    <path id="Path_1"
+                        d="M 1635.044921875 -176.4518280029297 C 1635.044921875 -176.4518280029297 1349.838623046875 -334.0596923828125 1385.748046875 -101.5028991699219 C 1421.6572265625 131.0538635253906 1125.471435546875 59.52488708496094 1082.722412109375 341.6709594726563 C 1039.97265625 623.8172607421875 1202.4208984375 541.7381591796875 1197.291015625 829.01416015625 C 1192.1611328125 1116.290771484375 1615.505004882813 1134.260009765625 1690.933471679688 1134.260009765625 C 1766.362060546875 1134.260009765625 1957.810302734375 990.0810546875 1957.810302734375 990.0810546875 L 1957.810302734375 -150.8021850585938 L 1635.044921875 -176.4518280029297 Z">
+                    </path>
+                </svg>
+                <img id="Image_1" src="img/Image_1.png" srcset="img/Image_1.png 1x, img/Image_1@2x.png 2x">
+
+                <div id="FLYING_EAGLE">
+                </div>
+            </div>
+            -->
+        </section>
+
+        <div id="sponsor" class="container-fluid">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-5">
+                    <img id="FFI_NEG" class="img-fluid" src="img/FFI_logo_negativ.png">
+                </div>
+
+                <div class="col-1">
+                    <svg class="sponsor_divider" viewBox="0 0 6 195">
+                        <path id="sponsor_divider" d="M 0 195 L 0 0">
+                        </path>
+                    </svg>
+                </div>
+                <div class="col-5">
+                    <img id="USN_NEG" class="img-fluid" src="img/g16.png" srcset="img/g16.png 1x, img/g16@2x.png 2x">
                 </div>
             </div>
 
 
-            
-
         </div>
-    </section>
+
+        <section id="updates" class="h-100">
 
 
-    <section id="project" class="h-100 page1">
-        <header>
-            <nav>
-                <ul>
-                    <li><a data-page="home" href="#">HOME</a></li>
-                    <li><a data-page="project" href="#">PROJECT</a></li>
-                    <li><a data-page="updates" href="#">UPDATES</a></li>
-                    <li><a data-page="about us" href="#">ABOUT US</a></li>
-                    <li><a data-page="contact" href="#">CONTACT</a></li>
-                    <div class="line"></div>
-                </ul>
-            </nav>
-        </header>
-        <!--
-        <div class="h-100">
-            <div class="row">
-
-            </div>
-            <div id="PROJECT">
-                <span>PROJECT</span>
-                <h1 id="FLYING_EAGLE">FLYING EAGLE</h1>
-            </div>
-            <svg class="Line_1" viewBox="0 0 583 8">
-                <path id="Line_1" d="M 0 0 L 583 0">
-                </path>
-            </svg>
-            <div id="OUR_BACHELOR_PROJECT_2020_THIS">
-                <span>OUR BACHELOR PROJECT 2020,<br />THIS PROJECT HAS BEEN DRONED</span>
-            </div>
-            <svg class="Path_1" viewBox="1075.547 -228.643 882.263 1362.903">
-                <path id="Path_1"
-                    d="M 1635.044921875 -176.4518280029297 C 1635.044921875 -176.4518280029297 1349.838623046875 -334.0596923828125 1385.748046875 -101.5028991699219 C 1421.6572265625 131.0538635253906 1125.471435546875 59.52488708496094 1082.722412109375 341.6709594726563 C 1039.97265625 623.8172607421875 1202.4208984375 541.7381591796875 1197.291015625 829.01416015625 C 1192.1611328125 1116.290771484375 1615.505004882813 1134.260009765625 1690.933471679688 1134.260009765625 C 1766.362060546875 1134.260009765625 1957.810302734375 990.0810546875 1957.810302734375 990.0810546875 L 1957.810302734375 -150.8021850585938 L 1635.044921875 -176.4518280029297 Z">
-                </path>
-            </svg>
-            <img id="Image_1" src="img/Image_1.png" srcset="img/Image_1.png 1x, img/Image_1@2x.png 2x">
-
-            <div id="FLYING_EAGLE">
-            </div>
-        </div>
-        -->
-    </section>
-
-    <section id="updates" class="h-100 page1" data-index="1">
+        </section>
+    </main>
 
 
-    </section>
-    
-    
-
-     <script src="nav.js"></script>
+    <script src="nav.js"></script>
 
 </body>
 
