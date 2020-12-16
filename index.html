@@ -12,7 +12,7 @@
 
     <title>Group 1: Drone</title>
     <style id="applicationStylesheet" type="text/css">
-        #page1 {
+        .page1 {
             background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
         }
 
@@ -126,6 +126,7 @@
             position: absolute;
             z-index: -2;
             background: #0DAFB2;
+            transition: all 0.5s ease;
 
         }
 
@@ -134,10 +135,8 @@
 </head>
 
 <body class="h-100">
-    <section id="page1" class="h-100" data-index="0">
-        
 
-
+    <section id="home" class="h-100 page1">
         <div class="h-100">
             <div class="row">
                 <div class="col-12 col-md-6">
@@ -160,7 +159,7 @@
                             d="M 1635.044921875 -176.4518280029297 C 1635.044921875 -176.4518280029297 1349.838623046875 -334.0596923828125 1385.748046875 -101.5028991699219 C 1421.6572265625 131.0538635253906 1125.471435546875 59.52488708496094 1082.722412109375 341.6709594726563 C 1039.97265625 623.8172607421875 1202.4208984375 541.7381591796875 1197.291015625 829.01416015625 C 1192.1611328125 1116.290771484375 1615.505004882813 1134.260009765625 1690.933471679688 1134.260009765625 C 1766.362060546875 1134.260009765625 1957.810302734375 990.0810546875 1957.810302734375 990.0810546875 L 1957.810302734375 -150.8021850585938 L 1635.044921875 -176.4518280029297 Z">
                         </path>
                     </svg>
-                    <img id="Image_1" src="img/Image_1.png" srcset="img/Image_1.png 1x, img/Image_1@2x.png 2x">
+                   <!-- <img id="Image_1" src="img/Image_1.png" srcset="img/Image_1.png 1x, img/Image_1@2x.png 2x"> -->
                 </div>
             </div>
 
@@ -170,13 +169,13 @@
         </div>
     </section>
 
-
-    <section id="page2" class="h-100" data-index="1">
+    
+    <section id="project" class="h-100 page1">
         <header>
             <nav>
                 <ul>
                     <li><a data-page="home" href="#">HOME</a></li>
-                    <li><a data-page="project" href="#">OUR PROJECT</a></li>
+                    <li><a data-page="project" href="#">PROJECT</a></li>
                     <li><a data-page="updates" href="#">UPDATES</a></li>
                     <li><a data-page="about us" href="#">ABOUT US</a></li>
                     <li><a data-page="contact" href="#">CONTACT</a></li>
@@ -212,8 +211,13 @@
         </div>
         -->
     </section>
-    <section id="page2" class="h-100" data-index="1"></section>
+
+    <section id="updates" class="h-100 page1" data-index="1">
+
+
     </section>
+    
+    
 
      <script src="nav.js"></script>
 
