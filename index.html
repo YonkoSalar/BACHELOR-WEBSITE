@@ -42,7 +42,7 @@
             font-weight: lighter;
             font-size: 30px;
             color: rgba(255, 255, 255, 1);
-            margin-left: 34px;  
+            margin-left: 34px;
             margin-top: 20px;
             padding-left: 40px;
         }
@@ -82,7 +82,7 @@
             fill: rgba(255, 255, 255, 1);
         }
 
-        
+
         .Path_1 {
             overflow: visible;
             position: absolute;
@@ -171,8 +171,9 @@
             shape-rendering: auto;
         }
 
+
+
         .sponsor_divider {
-            overflow: visible;
             transform: matrix(1, 0, 0, 1, 0, 0);
             height: auto;
             width: 10%;
@@ -183,13 +184,19 @@
             display: None;
         }
 
+        .splashcontainer {
+            position: relative;
+            overflow: hidden;
+            outline: auto;
+        }
+
         .splash {
             position: absolute;
-            right: 0;
-            top: 0;
-            width: 70%;
+            right: -0%;
+            top: 0%;
             height: 110%;
-        
+            transform: translate(-0%, -0%);
+            outline: auto;
         }
     </style>
 </head>
@@ -223,11 +230,14 @@
                             <span>OUR BACHELOR PROJECT 2020,<br />THIS PROJECT HAS BEEN DRONED</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col col-xl-6 d-none d-xl-block">
+                <div class="col col-xl-6 d-none d-xl-block">
+                    <div class="splashcontainer">
                         <img class="img-fluid float-end" id="Image_1" src="img/Image_1.png"
                             srcset="img/Image_1.png 1x, img/Image_1@2x.png 2x">
-                        <!--<svg class="Path_1 img-fluid float-end" viewBox="1075.547 -228.643 882.263 1362.903">
+                    </div>
+                    <!--<svg class="Path_1 img-fluid float-end" viewBox="1075.547 -228.643 882.263 1362.903">
                             <path id="Path_1"
                                 d="M 1635.044921875 -176.4518280029297 C 1635.044921875 -176.4518280029297 1349.838623046875 -334.0596923828125 1385.748046875 -101.5028991699219 C 1421.6572265625 131.0538635253906 1125.471435546875 59.52488708496094 1082.722412109375 341.6709594726563 C 1039.97265625 623.8172607421875 1202.4208984375 541.7381591796875 1197.291015625 829.01416015625 C 1192.1611328125 1116.290771484375 1615.505004882813 1134.260009765625 1690.933471679688 1134.260009765625 C 1766.362060546875 1134.260009765625 1957.810302734375 990.0810546875 1957.810302734375 990.0810546875 L 1957.810302734375 -150.8021850585938 L 1635.044921875 -176.4518280029297 Z">
                             </path>
@@ -245,18 +255,19 @@
                                 1957.810302734375 990.0810546875 L 1957.810302734375 -1150.8021850585938 L 1635.044921875 -176.4518280029297 Z">
                             </path>
                         </svg>-->
-                        <svg class="splash" xmlns="http://www.w3.org/2000/svg" width="1253.591" height="1362.902" viewBox="-550 125 1253.591 1362.902" >
-                            <path id="Path_1" data-name="Path 1" d="M1870.527-176.452S1465.283-334.06,1516.306-101.5,1146.484,59.525,1085.742,341.671s170.077,200.067,162.788,487.343,594.232,305.246,701.407,305.246,379.2-144.179,379.2-144.179V-150.8Z" 
-                            transform="translate(-1075.547 228.643)" fill="#fff"/>
+                    <div class="splashcontainer">
+                        <svg class="splash" xmlns="http://www.w3.org/2000/svg" width="1253.591" height="1362.902"
+                            viewBox="-550 125 1253.591 1362.902">
+                            <path id="Path_1" data-name="Path 1"
+                                d="M1870.527-176.452S1465.283-334.06,1516.306-101.5,1146.484,59.525,1085.742,341.671s170.077,200.067,162.788,487.343,594.232,305.246,701.407,305.246,379.2-144.179,379.2-144.179V-150.8Z"
+                                transform="translate(-1075.547 228.643)" fill="#fff" />
                         </svg>
-
-
                     </div>
-
                 </div>
 
-                </div>
-                
+
+            </div>
+
             </div>
         </section>
 
@@ -264,7 +275,7 @@
         <section id="project" class="h-100">
 
             <!--Må endre på style her, siden det fungerer ikke når nettsiden blir mindre-->
-            <div class ="row mb-2">
+            <div class="row">
                 <div class="col-md-6">
                     <div class="flex-md-row mb-10 h-md-250 col-md-10 blog-main">
                         <img src="img/PngItem_1979490.png" style="margin-top:20%; margin-left: 5%;">
@@ -273,29 +284,30 @@
 
                 <div class="col-md-6">
                     <div class="flex-md-row mb-10 h-md-250 col-md-10 blog-main" style="margin-top:10%;">
-                        
-                        <h1 >
-                            <span style="color: white; font-size: 60px; border-bottom: 5px solid #0DAFB2;">PROJECT</span>
+
+                        <h1>
+                            <span
+                                style="color: white; font-size: 60px; border-bottom: 5px solid #0DAFB2;">PROJECT</span>
                         </h1>
-                        <p >
+                        <p>
                             <span style="color: white; font-size: 45px;">
-                                Lorem Ipsum is simply dummy text of 
-                                the printing and typesetting industry. Lorem 
-                                Ipsum has been the industry's standard dummy 
-                                text ever since the 1500s, when an unknown printer 
-                                took a galley of type and scrambled it to make a type 
-                                specimen book. It has survived not only five centuries, 
-                                but also the leap into electronic typesetting, remaining 
-                                essentially unchanged. It was popularised in the 1960s 
-                                with the release of Letraset sheets containing Lorem Ipsum 
-                                passages, and more recently with desktop publishing software 
+                                Lorem Ipsum is simply dummy text of
+                                the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy
+                                text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type
+                                specimen book. It has survived not only five centuries,
+                                but also the leap into electronic typesetting, remaining
+                                essentially unchanged. It was popularised in the 1960s
+                                with the release of Letraset sheets containing Lorem Ipsum
+                                passages, and more recently with desktop publishing software
                                 like Aldus PageMaker including versions of Lorem Ipsum.
                             </span>
                         </p>
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
 
@@ -326,7 +338,7 @@
         </section>
 
         <section id="about us" class="h-100">
-            <h1 >
+            <h1>
                 <span style="color: white; font-size: 60px; border-bottom: 5px solid #0DAFB2;">ABOUT US</span>
             </h1>
 

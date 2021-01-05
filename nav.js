@@ -32,11 +32,11 @@ function navCheck(entries) {
             line.style.setProperty("height", `${directions.height}px`);
             line.style.background = "background: blue";
 
-            if (idName != "home") {
+            /* if (idName != "home") {
                 hide.classList.remove('hidden')
             } else {
                 hide.classList.add('hidden')
-            }
+            } */
         }
     });
 }
