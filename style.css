@@ -1,6 +1,14 @@
 #home {
   background: linear-gradient(
-    315deg,
+    180deg,
+    rgba(24, 61, 126, 1) 0%,
+    rgba(16, 27, 61, 1) 100%
+  );
+}
+
+#home_project {
+  background: linear-gradient(
+    180deg,
     rgba(16, 27, 61, 1) 0%,
     rgba(24, 61, 126, 1) 100%
   );
@@ -23,19 +31,15 @@
 }
 
 #updates {
-  background: linear-gradient(
-    315deg,
-    rgba(16, 27, 61, 1) 0%,
-    rgba(24, 61, 126, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(24, 61, 126, 1) 0%, #2670a1 100%);
 }
 
-#page4 {
-  background: linear-gradient(
-    315deg,
-    rgba(16, 27, 61, 1) 0%,
-    rgba(24, 61, 126, 1) 100%
-  );
+#about_us {
+  background: linear-gradient(180deg, #2670a1 0%, #39b0ff 100%);
+}
+
+#contact {
+  background: linear-gradient(180deg, #39b0ff 0%, #ffaeae 100%);
 }
 
 #PROJECT {
@@ -68,17 +72,6 @@
     transform: matrix(1, 0, 0, 1, 0, 0);*/
 }
 
-#OUR_BACHELOR_PROJECT_2020_THIS {
-  position: relative;
-  overflow: visible;
-  white-space: nowrap;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  color: rgba(255, 255, 255, 1);
-}
-
 #Path_1 {
   fill: rgba(255, 255, 255, 1);
 }
@@ -108,14 +101,37 @@
   top: 10%;
 }
 
-#FLYING_EAGLE {
+#PROJECT_TEXT {
   position: relative;
   overflow: visible;
   white-space: nowrap;
   font-family: Open Sans;
   font-style: normal;
+  font-weight: normal;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 1);
+}
+
+#PROJECT_NAME {
+  position: relative;
+  overflow: visible;
+  white-space: nowrap;
+  font-family: Open Sans;
+  font-style: italic;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 23vw;
+  color: rgba(255, 255, 255, 1);
+  left: -10%;
+}
+
+#PROJECT_UNDERTEXT {
+  position: relative;
+  overflow: visible;
+  white-space: nowrap;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 4vw;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -179,7 +195,7 @@ nav a {
 
 .splashcontainer {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   outline: auto;
 }
 
@@ -203,3 +219,136 @@ nav a {
   display: block;
   z-index: 1;
 }
+
+#USN_NEG {
+  width: 80%;
+}
+
+#FFI_NEG {
+  width: 80%;
+}
+
+#img_project {
+  width: 50%;
+  height: 50%;
+}
+
+.underline_text {
+  border-bottom: 5px solid #0dafb2;
+  width: 35%; /* Change this to whatever width you want. */
+}
+
+.timeline_line {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+#timeline_line {
+  stroke: rgba(13, 175, 178, 1);
+  stroke-width: 100%;
+}
+
+
+
+.flip-card {
+  
+  width: 240px;
+  height: 360px;
+  margin: auto;
+  margin-bottom: 30px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  text-align: center;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+/*
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+*/
+
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
