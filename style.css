@@ -252,7 +252,8 @@ nav a {
 
 
 .flip-card {
-  
+
+
   width: 240px;
   height: 360px;
   margin: auto;
@@ -263,6 +264,7 @@ nav a {
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
+ 
   position: relative;
   width: 100%;
   height: 100%;
@@ -286,11 +288,14 @@ nav a {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+
+  border-radius: 15px 50px;
+  padding: 20px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
 }
 
