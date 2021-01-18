@@ -6,6 +6,7 @@ const sections = document.querySelectorAll("section");
 const line = document.querySelector(".line");
 
 const options = {
+    rootMargin: '0px',
     threshold: 0.7,
 };
 
@@ -30,11 +31,16 @@ function navCheck(entries) {
             line.style.setProperty("height", `${directions.height}px`);
             line.style.background = "background: blue";
 
-        
+
         }
     });
 }
 
 sections.forEach((section) => {
     observer.observe(section);
+    console.log(section);
 });
+ 
+    
+
+

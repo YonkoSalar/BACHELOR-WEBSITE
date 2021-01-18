@@ -11,8 +11,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
 
-    <!-- Box Icons-->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 
     <title>Group 1: Drone</title>
 </head>
@@ -24,7 +23,7 @@
                 <li class="nav-item"><a class="nav-link p-2" data-page="home" href="#">HOME</a></li>
                 <li class="nav-item"><a class="nav-link p-2" data-page="project" href="#">PROJECT</a></li>
                 <li class="nav-item"><a class="nav-link p-2" data-page="updates" href="#">UPDATES</a></li>
-                <li class="nav-item"><a class="nav-link p-2" data-page="about_us" href="#">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link p-2" data-page="aboutus" href="#">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link p-2" data-page="contact" href="#">CONTACT</a></li>
                 <div class="line"></div>
             </ul>
@@ -36,7 +35,7 @@
             </br></br></br>
             </br></br></br>
             <img src="img/ic2.png" class="img-fluid mx-auto d-block">
-            
+
             <div class="row">
                 <div class="col-2">
 
@@ -50,26 +49,21 @@
                                     <h1 id="PROJECT_TEXT">PROJECT</h1>
                                     <h2 id="PROJECT_NAME">ICARUS</h2>
 
-                                    <h2 id="PROJECT_UNDERTEXT">Breaking limits</h2>
+                                    <h2 id="PROJECT_UNDERTEXT">Breaking Limits</h2>
 
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
             </div>
-            </br></br></br>
-
         </section>
-
-        
 
         <section id="project" class="h-100 container-fluid">
             <div class="row h-100 pt-4 px-4">
                 <div class="col-12 ">
 
-                    <h1 class="text-white underline_text">PROJECT</h1>
+                    <h1 class="text-white display-3">PROJECT</h1>
                     <span class="text-white">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -83,193 +77,252 @@
 
                 <div class="col-12">
 
-                    <img class="img-fluid" src="img/PngItem_1979490.png"
-                        srcset="img/PngItem_1979490.png 1x, img/PngItem_1979490@2x.png 2x">
 
+
+
+                    <!--
+                    <a href="">
+                        <img class="img-fluid" src="img/PngItem_1979490.png"
+                            srcset="img/PngItem_1979490.png 1x, img/PngItem_1979490@2x.png 2x">
+                    </a>-->
                 </div>
 
             </div>
         </section>
 
-        <div id="sponsor" class="container-fluid py-4">
+        <div id="sponsor" class="container-fluid py-4 text-center">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                    <img id="USN_NEG" class="" src="img/g16.png" srcset="img/g16.png 1x, img/g16@2x.png 2x">
+                    <a href="https://www.usn.no/">
+                        <img id="USN_NEG" class="" src="img/g16.png" srcset="img/g16.png 1x, img/g16@2x.png 2x">
+                    </a>
                 </div>
 
                 <div class="col-12 d-flex justify-content-center">
-                    <img id="FFI_NEG" class="" src="img/FFI_logo_negativ.png">
+                    <a href="https://www.ffi.no/">
+                        <img id="FFI_NEG" class="" src="img/FFI_logo_negativ.png">
+                    </a>
                 </div>
             </div>
         </div>
 
-        <section id="updates" class="container-fluid ">
-            <div class="p-4 ">
-                <h1 class="text-white underline_text ">UPDATES</h1>
+        <section id="updates" class="container-fluid">
+            <div class="p-4 text-center">
+                <h1 class="text-white display-3">UPDATES</h1>
             </div>
 
             <div class="row">
-                <div class="col-11">
+                <div class="col-10 mx-auto">
                     <ul class="timeline">
-                        <li>
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <li class="timeline-item p-3">
+                            <div class="timeline-arrow"></div>
+                            <div class="card border-grey rounded-3">
+                                <div class="card-header">
+
+                                    <span class="text-muted">
+                                        <box-icon type='regular' size="xs" name='time'></box-icon>
+                                        08 January, 2021
+                                    </span>
                                 </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="img/ic2.png" class="img-fluid">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The project begins!</h5>
+
+                                            <p class="fw-light">We were lucky enough do get one of the most
+                                                interesting projects we could have asked for,
+                                                not only in terms of the product we were to develop, but we were also
+                                                given freedom to do it in whatever way we wanted and
+                                                were allowed to experiment with many different solutions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </li>
                     </ul>
-
                 </div>
+
 
             </div>
 
         </section>
 
-        <section id="about_us" class="h-100 container-fluid">
-            <div class="container text-center">
-                <h1 class="text-white ">OUR TEAM</h1>
+        <section id="aboutus" class="container-fluid">
+            <div class="container text-center pt-4">
+                <h1 class="text-white display-3">TEAM</h1>
 
-                <div class="row ">
-
-
+                <div class="row pt-2">
                     <div class="col-12 col-md-4">
-                        <div  class="flip-card">
+                        <div class="flip-card">
 
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./img/bear.png">
-                                    </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front ">
+                                    <img class="img-fluid rounded-circle pt-4" src="./img/kim.jpg">
+                                    <h1 class="card-title display-4 pt-2">Kim Hellevammen</h1>
+
+                                </div>
 
                                 <div class="flip-card-back">
-                                    <h1 class="card-title">Kim Andrew</h1>
-                                    <p class="card-text">Mechnical Engineering</p>
+
+                                    <p class="card-text">Mechanical Engineering</p>
                                     <p class="card-text">We love that guy</p>
                                 </div>
 
-                            
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div  class="flip-card" >
+                        <div class="flip-card">
 
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./img/bear.png">
-                                    </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle mt-4" src="./img/tobias.jpg">
+                                    <h1 class="card-title display-4 pt-2">Tobias Kjellstrøm</h1>
+                                </div>
 
                                 <div class="flip-card-back">
-                                    <h1 class="card-title">Kim Andrew</h1>
-                                    <p class="card-text">Mechnical Engineering</p>
+                                    <p class="card-text">Computer Engineering</p>
                                     <p class="card-text">We love that guy</p>
                                 </div>
 
-                            
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div  class="flip-card">
+                        <div class="flip-card">
 
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./img/bear.png">
-                                    </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle mt-4" src="./img/steve_jobs.jpg">
+                                    <h1 class="card-title display-4 pt-2">Salar Adel</h1>
+                                </div>
 
                                 <div class="flip-card-back">
-                                    <h1 class="card-title">Kim Andrew</h1>
-                                    <p class="card-text">Mechnical Engineering</p>
+
+                                    <p class="card-text">Computer Engineering</p>
                                     <p class="card-text">We love that guy</p>
                                 </div>
 
-                            
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div  class="flip-card">
+                        <div class="flip-card">
 
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./img/bear.png">
-                                    </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle mt-4" src="./img/mils.png">
+                                    <h1 class="card-title display-4 pt-2">Nils Øines</h1>
+                                </div>
 
                                 <div class="flip-card-back">
-                                    <h1 class="card-title">Kim Andrew</h1>
-                                    <p class="card-text">Mechnical Engineering</p>
+                                    <p class="card-text">Mechanical Engineering</p>
                                     <p class="card-text">We love that guy</p>
                                 </div>
 
-                            
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div  class="flip-card">
+                        <div class="flip-card">
 
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./img/bear.png">
-                                        
-                                    </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle mt-4" src="./img/papi.jpg">
+                                    <h1 class="card-title display-4 pt-2">Javier Sossa</h1>
 
-                                    
+                                </div>
+
+
 
                                 <div class="flip-card-back">
-                                    <h1 class="card-title">Kim Andrew</h1>
-                                    <p class="card-text">Mechnical Engineering</p>
+
+                                    <p class="card-text">Mechanical Engineering</p>
                                     <p class="card-text">We love that guy</p>
                                 </div>
 
-                            
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div  class="flip-card" >
+                        <div class="flip-card">
 
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./img/bear.png">
-                                    </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle" src="./img/shalil.jpg">
+                                    <h1 class="card-title display-4 pt-2">Shakil Sheikh</h1>
+                                </div>
 
                                 <div class="flip-card-back">
-                                    <h1 class="card-title">Kim Andrew</h1>
-                                    <p class="card-text">Mechnical Engineering</p>
+
+                                    <p class="card-text">Electrical Engineering</p>
                                     <p class="card-text">We love that guy</p>
                                 </div>
 
-                            
+
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="h-100 container-fluid pt-4">
+            <div class="container text-center">
+                <h1 class="text-white display-3">CONTACT</h1>
+
+                <div class="col-12">
+                    <a href="https://www.instagram.com/icarus_usn/">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:rgb(214,41,118);stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:rgb(150,47,191);stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#grad1)"
+                                d="M20.947,8.305c-0.011-0.757-0.151-1.508-0.419-2.216c-0.469-1.209-1.424-2.165-2.633-2.633 c-0.699-0.263-1.438-0.404-2.186-0.42C14.747,2.993,14.442,2.981,12,2.981s-2.755,0-3.71,0.055 c-0.747,0.016-1.486,0.157-2.185,0.42C4.896,3.924,3.94,4.88,3.472,6.089C3.209,6.788,3.067,7.527,3.053,8.274 c-0.043,0.963-0.056,1.268-0.056,3.71s0,2.754,0.056,3.71c0.015,0.748,0.156,1.486,0.419,2.187 c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45c0.963,0.043,1.268,0.056,3.71,0.056s2.755,0,3.71-0.056 c0.747-0.015,1.486-0.156,2.186-0.419c1.209-0.469,2.164-1.425,2.633-2.633c0.263-0.7,0.404-1.438,0.419-2.187 c0.043-0.962,0.056-1.267,0.056-3.71C21.003,9.572,21.003,9.262,20.947,8.305z M11.994,16.602c-2.554,0-4.623-2.069-4.623-4.623 s2.069-4.623,4.623-4.623c2.552,0,4.623,2.069,4.623,4.623S14.546,16.602,11.994,16.602z M16.801,8.263 c-0.597,0-1.078-0.482-1.078-1.078s0.481-1.078,1.078-1.078c0.595,0,1.077,0.482,1.077,1.078S17.396,8.263,16.801,8.263z">
+                            </path>
+                            <circle cx="11.994" cy="11.979" r="3.003" fill="url(#grad1)"></circle>
+
+                        </svg> -->
+                        <img src="img/instagram (1).svg" class="pt-4" width="108" height="108">
+                        
+                    </a>
+                    <h2 class="text-white ">INSTAGRAM</h2>
+                </div>
+
+                <div class="col-12 pt-4">
+                    <a href="mailto:projecticarususn@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 24 24"
+                            style="fill:linear-gradient(#e66465, #9198e5);">
+                            <path
+                                d="M20,4H6C4.897,4,4,4.897,4,6v5h2V8l6.4,4.8c0.178,0.133,0.389,0.2,0.6,0.2s0.422-0.067,0.6-0.2L20,8v9h-8v2h8 c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M13,10.75L6.666,6h12.668L13,10.75z">
+                            </path>
+                            <path d="M2 12H9V14H2zM4 15H10V17H4zM7 18H11V20H7z"></path>
+                        </svg>
+                    </a>
+                    <h2 class="text-white">MAIL</h2>
 
 
                 </div>
 
-
-            </div>
-
-        
-
-        </section>
-
-
-        <section id="contact" class="h-100 container-fluid">
-            <div class="container text-center">
-                <i class='bx bxl-instagram-alt' ></i>
-                <h1>CONTACT</h1>
             </div>
 
         </section>
@@ -277,7 +330,7 @@
 
 
     <script src="nav.js"></script>
-    
+
 
 </body>
 
