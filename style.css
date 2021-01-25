@@ -108,7 +108,8 @@
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 6vw;
+  /*font-size: 6vw;*/
+
   color: rgba(255, 255, 255, 1);
 }
 
@@ -119,9 +120,10 @@
   font-family: Open Sans;
   font-style: italic;
   font-weight: bold;
-  font-size: 23vw;
+  font-size: 10vw;
   color: rgba(255, 255, 255, 1);
   left: -10%;
+
 }
 
 #PROJECT_UNDERTEXT {
@@ -133,6 +135,7 @@
   font-weight: lighter;
   font-size: 4vw;
   color: rgba(255, 255, 255, 1);
+   
 }
 
 /* HEADER NAVBAR */
@@ -358,8 +361,6 @@ perspective: -9000px;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-
-
 
 
 
