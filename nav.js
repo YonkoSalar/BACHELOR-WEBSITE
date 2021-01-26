@@ -6,8 +6,9 @@ const sections = document.querySelectorAll("section");
 const line = document.querySelector(".line");
 
 const options = {
-    rootMargin: '0px',
-    threshold: 0.7,
+    root: null,
+    rootMargin: "-50% 0px",
+    threshold: 0
 };
 
 let observer = new IntersectionObserver(navCheck, options);
@@ -23,24 +24,21 @@ function navCheck(entries) {
             top: coords.top + 35,
             left: coords.left,
         };
-
         if (entry.isIntersecting) {
+            console.log("intersecting: " + entry.target.id)
             line.style.setProperty("left", `${directions.left}px`);
             line.style.setProperty("top", `${directions.top}px`);
             line.style.setProperty("width", `${directions.width}px`);
             line.style.setProperty("height", `${directions.height}px`);
             line.style.background = "background: blue";
-
-
         }
     });
 }
 
 sections.forEach((section) => {
     observer.observe(section);
-    console.log(section);
 });
- 
-    
+
+
 
 
