@@ -50,6 +50,7 @@ html {
 
 main {
   position: relative;
+  padding-top: 10vh;
 }
 
 #home {
@@ -136,9 +137,8 @@ main {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 10vw;
+  font-size: 5rem;
   color: rgba(255, 255, 255, 1);
-  left: -20%;
 }
 #PROJECT_NAME {
   position: relative;
@@ -149,7 +149,6 @@ main {
   font-weight: bold;
   font-size: 14vh;
   color: rgba(255, 255, 255, 1);
-  left: -0%;
 }
 #PROJECT_UNDERTEXT {
   position: relative;
@@ -160,7 +159,6 @@ main {
   font-weight: lighter;
   font-size: 8vw;
   color: rgba(255, 255, 255, 1);
-  left: 10%;
 }
 header {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
