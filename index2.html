@@ -14,6 +14,15 @@
 
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+        crossorigin="anonymous"></script>
+    <script src="./fullpage.min.js"></script>
+
 
     <title>Group 1: Icarus</title>
 </head>
@@ -35,93 +44,112 @@
     <main class="h-100">
 
 
-        <section id="home" class="h-100 container-fluid">
+        <section id="home" class="container-fluid d-flex">
             <div id="stars"></div>
             <div id="stars2"></div>
             <div id="stars3"></div>
+            <div class="d-flex justify-content-center align-self-stretch">
+                <div class="row mt-4 d-flex justify-content-around align-items-center align-self-stretch">
+                    <div class="order-xl-2 col-12 col-md-8 col-xl-6">
+                        <img src="img/ic3.png" class="img-fluid d-block">
+                    </div>
+                    <div class="order-xl-1 col-xl-6 ">
+                        <div class="text-center align-items-center align-self-stretch d-flex flex-column">
+                            <div>
+                                <h1 class="align-self-start" id="PROJECT_TEXT">PROJECT</h1>
+                            </div>
+                            <div>
+                                <h2 class="align-self-center" id="PROJECT_NAME">ICARUS</h2>
+                            </div>
+                            <div>
+                                <h2 class="align-self-end" id="PROJECT_UNDERTEXT">Breaking Limits</h2>
 
-
-
-
-            <div class="row mt-4">
-                <div class="order-md-2 col-12 col-md-6">
-                    <img src="img/ic2.png" class="img-fluid mx-auto d-block mt-4">
-                </div>
-
-                <div class="order-md-1 col-md-6 text-center">
-                    <div class="d-flex flex-column">
-                        <div>
-                            <h1 class="align-self-start" id="PROJECT_TEXT">PROJECT</h1>
-
-                        </div>
-
-                        <div>
-                            <h2 class="align-self-center" id="PROJECT_NAME">ICARUS</h2>
-
-                        </div>
-
-
-                        <div>
-                            <h2 class="align-self-end" id="PROJECT_UNDERTEXT">Breaking Limits</h2>
+                            </div>
 
                         </div>
                     </div>
 
                 </div>
             </div>
+
+
         </section>
 
         <section id="project" class="h-100 container-fluid">
-            <div class="row h-100 pt-4 px-4">
-                <div class="col-12 col-md-6">
 
+            <div class="row h-100 px-5 mx-3 py-4">
+
+                <div class="col-12 col-md-6 ml-3 my-3">
                     <h1 class="text-white display-3">PROJECT</h1>
-                    <span class="text-white mt-4">
+
+                    <span id="text_project" class="text-white mt-4">
                         ICARUS is bachelor group at University of southeastern Norway in Norway.
-                        In collaboration with FFI, our goal is to research and develop alternatives ways
-                        of increasing the flight time of drones. Our goal is to explore some of these unique
-                        methods and design, to create a fully functional drone.
-                        We believe with our mutlidisiplinary group we will test our skills and abilities will in
-                        each discipline of engineering field.
+                        In collaboration with FFI, our goal is to investigate and study the effect of aerodynamic
+                        on UAV to help establish new facts and research conclusions.
 
 
                     </span>
-
-
 
                 </div>
 
 
                 <div class="col-12 col-md-6 ">
-                    <div class="mt-4  ">
+                    <div class="mt-4">
+
                         <img src="img/PngItem_1979490.png" class="img-fluid" width="614" height="480">
+
                     </div>
                 </div>
 
+                <div id="" class="container-fluid py-4 text-center">
+                    <div class="row d-flex align-items-center">
+
+
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www.ffi.no/" class="my-4 d-flex align-items-center justify-content-center">
+                                <img id="FFI_NEG" class="img-fluid " src="img/FFI_logo_negativ.png">
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www.usn.no/" class="my-4 d-flex align-items-center justify-content-center">
+                                <img id="USN_NEG" class="img-fluid " src="img/USN_logo_rgb_neg (1).png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+
+            </div>
+
+
         </section>
 
+        <!--
         <div id="sponsor" class="container-fluid py-4 text-center">
-            <div class="row">
+            <div class="row d-flex align-items-center">
 
 
-                <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <a href="https://www.ffi.no/">
-                        <img id="FFI_NEG" class="" src="img/FFI_logo_negativ.png">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <a href="https://www.ffi.no/" class="my-4 d-flex align-items-center justify-content-center">
+                        <img id="FFI_NEG" class="img-fluid d-block" src="img/FFI_logo_negativ.png">
                     </a>
                 </div>
 
-                <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <a href="https://www.usn.no/">
-                        <img id="USN_NEG" class="" src="img/g16.png" srcset="img/g16.png 1x, img/g16@2x.png 2x" ;>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <a href="https://www.usn.no/" class="my-4 d-flex align-items-center justify-content-center">
+                        <img id="USN_NEG" class="img-fluid d-block" src="img/USN_logo_rgb_neg (1).png">
                     </a>
                 </div>
             </div>
         </div>
+        -->
 
         <section id="updates" class="container-fluid">
-            <div class="p-4 text-center">
-                <h1 class="text-white display-3">UPDATES</h1>
+            <div class="text-center">
+                <h1 class="text-white display-3 py-4">UPDATES</h1>
             </div>
 
             <div class="row">
@@ -150,7 +178,8 @@
                                         <div class="card-body">
                                             <h5 class="card-title">The project begins!</h5>
 
-                                            <p class="fw-light">We were lucky enough do get one of the most
+                                            <p class="fw-light">
+                                                We were lucky enough do get one of the most
                                                 interesting projects we could have asked for,
                                                 not only in terms of the product we were to develop, but we were also
                                                 given freedom to do it in whatever way we wanted and
@@ -189,15 +218,9 @@
                                             <h5 class="card-title">First Presentation!</h5>
 
                                             <p class="fw-light">
-                                                We were lucky enough do get one of the most
-                                                interesting projects we could have asked for,
-                                                not only in terms of the product we were to develop, but we were also
-                                                given freedom to do it in whatever way we wanted and
-                                                were allowed to experiment with many different solutions.
-
-
-
-
+                                                First presentation was done with great feedback on our
+                                                project. Now our plan further is to make improvements on
+                                                our overall project management, and keep researching further.
                                             </p>
                                         </div>
                                     </div>
@@ -214,8 +237,8 @@
         </section>
 
         <section id="aboutus" class="container-fluid">
-            <div class="text-center pt-4">
-                <h1 class="text-white display-3">TEAM</h1>
+            <div class="text-center">
+                <h1 class="text-white display-3 py-4">TEAM</h1>
 
                 <div class="row pt-2">
                     <div class="col-12 col-md-4">
@@ -231,15 +254,15 @@
                                 <div class="flip-card-back">
 
                                     <h1 class="mt-4 display-6 text-center">Mechanical Engineer</h1>
-                                    <p class="mt-4">PROJECT LEADER AND OWNER</p>
+                                    <p class="mt-4">PROJECT LEADER </p>
 
                                     <a href="https://www.linkedin.com/in/kim-hellevammen-805725139/"
                                         class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
                                     <a href="https://www.instagram.com/mr_kimandrew/" class="col-6 mt-4 bx-md"><i
                                             class='bx bxl-instagram bx-tada-hover'></i></a>
 
-                                    <a class="col-12"><button type="button" class="btn btn-lg btn-primary"
-                                            disabled>CONTACT</button></a>
+                                    <a class="col-12" href="mailto: hellevammenkim@gmail.com"><button type="button"
+                                            class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
 
                                 </div>
 
@@ -260,15 +283,15 @@
 
                                 <div class="flip-card-back">
                                     <h1 class="mt-4 display-6 text-center">Computer Engineer</h1>
-                                    <p class="mt-4">CHIEF FINANCIAL OFFICER</p>
+                                    <p class="mt-4">SOFTWARE ARCHITECT AND CHIEF FINANCIAL OFFICER</p>
 
                                     <a href="https://www.linkedin.com/in/tobias-kjellstr%C3%B8m-b471a5171/"
                                         class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
                                     <a href="https://www.instagram.com/tobiasskje/" class="col-6 mt-4 bx-md"><i
                                             class='bx bxl-instagram bx-tada-hover'></i></a>
 
-                                    <a class="col-12"><button type="button" class="btn btn-lg btn-primary"
-                                            disabled>CONTACT</button></a>
+                                    <a class="col-12" href="mailto: kjelltobias@gmail.com"><button type="button"
+                                            class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
 
                                 </div>
 
@@ -289,15 +312,15 @@
                                 <div class="flip-card-back">
 
                                     <h1 class="mt-4 display-6 text-center">Computer Engineer</h1>
-                                    <p class="mt-4">CHIEF RISK OFFICER</p>
+                                    <p class="mt-4">SOFTWARE ARCHITECT AND CHIEF RISK OFFICER</p>
 
                                     <a href="https://www.linkedin.com/in/salar-adel-4ba03016a/"
                                         class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
                                     <a hreft="https://www.instagram.com/salaradel/" class="col-6 mt-4 bx-md"><i
                                             class='bx bxl-instagram bx-tada-hover'></i></a>
 
-                                    <a class="col-12"><button type="button" class="btn btn-lg btn-primary"
-                                            disabled>CONTACT</button></a>
+                                    <a class="col-12" href="mailto: salaradel4@gmail.com"><button type="button"
+                                            class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
 
                                 </div>
 
@@ -325,8 +348,8 @@
                                     <a href="https://www.instagram.com/nilsoines/" class="col-6 mt-4 bx-md"><i
                                             class='bx bxl-instagram bx-tada-hover'></i></a>
 
-                                    <a class="col-12"><button type="button" class="btn btn-lg btn-primary"
-                                            disabled>CONTACT</button></a>
+                                    <a class="col-12" href="mailto: noines@live.no"><button type="button"
+                                            class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
 
                                 </div>
 
@@ -346,15 +369,15 @@
 
                                 <div class="flip-card-back">
                                     <h1 class="mt-4 display-6 display-7 text-center">Electrical Engineer</h1>
-                                    <p class="mt-4">REQUIREMENT MANAGEMENT</p>
+                                    <p class="mt-4">HARDWARE AND REQUIREMENT MANAGER</p>
 
                                     <a href="https://www.linkedin.com/in/javier-alvarez-sossa-846a571b4/"
                                         class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
                                     <a href="https://www.instagram.com/javiso_/" class="col-6 mt-4 bx-md"><i
                                             class='bx bxl-instagram bx-tada-hover'></i></a>
 
-                                    <a class="col-12"><button type="button" class="btn btn-lg btn-primary"
-                                            disabled>CONTACT</button></a>
+                                    <a class="col-12" href="mailto:javieralvarez98@outlook.com"><button type="button"
+                                            class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
 
                                 </div>
 
@@ -375,15 +398,15 @@
                                 <div class="flip-card-back">
 
                                     <h1 class="mt-4 display-6 display-7 text-center">Electrical Engineer</h1>
-                                    <p class="mt-4">VERIFICATION MANAGER</p>
+                                    <p class="mt-4">HARDWARE AND TEST ANALYSIS ARCHITECT</p>
 
                                     <a href="https://www.linkedin.com/in/shakil-masood-a2972a180/"
                                         class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
-                                    <a href="https://www.instagram.com/shakira/" class="col-6 mt-4 bx-md"><i
+                                    <a href="https://www.instagram.com/shaq_0307/" class="col-6 mt-4 bx-md"><i
                                             class='bx bxl-instagram bx-tada-hover'></i></a>
 
-                                    <a class="col-12"><button type="button" class="btn btn-lg btn-primary"
-                                            disabled>CONTACT</button></a>
+                                    <a class="col-12" href="mailto: shakilno3@gmail.com"><button type="button"
+                                            class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
 
                                 </div>
 
@@ -396,79 +419,55 @@
 
         </section>
 
-        <section id="contact" class="h-100 text-center container-fluid position-relative">
-            <div class="h-100 container ">
-                <h1 class="text-white display-3 pt-2">CONTACT</h1>
-                <div class="row justify-content-end mt-10">
+        <section id="contact" class="container-fluid d-flex">
 
-                    <div class="col-12 col-md-4 pt-2 ">
-                        <a href="https://www.instagram.com/icarus_usn/">
+            <div class="text-center row flex-grow-1 align-content-between">
+                <h1 class="col-12 text-white display-3 py-4">CONTACT</h1>
+                <div class="col-12 align-items-center">
+                    <div class="row ">
+                        <div class="col-12 col-md-4 pt-4 ">
+                            <a href="https://www.instagram.com/icarus_usn/">
 
-                            <img src="img/instagram (1).svg" class="pt-4" width="108" height="108">
+                                <img src="img/instagram (1).svg" class="pt-4" width="108" height="108">
 
-                        </a>
-                        <h2 class="text-white display-6 pt-2">INSTAGRAM</h2>
-                    </div>
+                            </a>
+                            <h2 class="text-white display-6 pt-2">INSTAGRAM</h2>
+                        </div>
 
-                    <div class="col-12 col-md-4 pt-4">
-                        <a>
-                            <img src="./img/twitter.svg" class="pt-4" width="108" height="108">
+                        <div class="col-12 col-md-4 pt-4">
+                            <a>
+                                <img src="./img/twitter.svg" class="pt-4" width="108" height="108">
 
-                        </a>
+                            </a>
 
-                        <h2 class="text-white display-6 pt-2">TWITTER</h2>
+                            <h2 class="text-white display-6 pt-2">TWITTER</h2>
 
+                        </div>
 
-                    </div>
+                        <div class="col-12 col-md-4 pt-4">
+                            <a href="mailto: projecticarususn@gmail.com">
+                                <img src="img/email.svg" class="pt-4" width="108" height="108">
 
-                    <div class="col-12 col-md-4 pt-4">
-                        <a href="mailto: projecticarususn@gmail.com">
-                            <img src="img/email.svg" class="pt-4" width="108" height="108">
+                            </a>
 
-                        </a>
-
-                        <h2 class="text-white display-6 pt-2">MAIL</h2>
-
-
-
-
-
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-            <!--FOOTER-->
-            <div class="py-5 sticky-bottom">
-                <div class="container">
-                    <div class="small text-center text-white">
-                        Copyright © 2021 - PROJECT ICARUS - USN Kongsberg
+                            <h2 class="text-white display-6 pt-2">MAIL</h2>
+                        </div>
                     </div>
                 </div>
 
+
+                <div class="col-12 small text-white align-self-end p-4">
+                    Copyright © 2021 - PROJECT ICARUS - USN Kongsberg - V.1
+                </div>
             </div>
-
-
-
-
 
 
         </section>
 
 
-
-
     </main>
 
-
-
-
     <script src="nav.js"></script>
-
 
 </body>
 
