@@ -28,7 +28,7 @@ function navCheck(entries) {
         };
         if (entry.isIntersecting) {
             activatedAnchor = activeAnchor;
-            console.log("intersecting: " + entry.target.id)
+            //console.log("intersecting: " + entry.target.id)
             line.style.setProperty("left", `${directions.left}px`);
             line.style.setProperty("top", `${directions.top}px`);
             line.style.setProperty("width", `${directions.width}px`);
@@ -39,7 +39,7 @@ function navCheck(entries) {
 }
 
 function navResize(){
-    console.log("navResize");
+    //console.log("navResize");
     if(activatedAnchor !== null){
         const coords = activatedAnchor.getBoundingClientRect();
         const directions = {

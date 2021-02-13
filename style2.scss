@@ -61,7 +61,7 @@ main {
     rgba(16, 27, 61, 1) 100%
   );
   overflow: hidden;
-  min-height: 100%;
+  min-height: 100vh;
   padding-top: 10vh;
 }
 #home_project {
@@ -220,6 +220,11 @@ nav {
   background: #0dafb2;
   transition: all 0.5s ease;
 }
+
+.max-1200{
+  max-width: 1200px;
+}
+
 #sponsor_divider {
   fill: transparent;
   stroke: rgba(255, 255, 255, 1);

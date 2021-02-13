@@ -9,348 +9,438 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="style2.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Group 1: Drone</title>
-    <style id="applicationStylesheet" type="text/css">
-        #home {
-            background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
-        }
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 
-        #project {
-            background: linear-gradient(180deg, rgba(24, 61, 126, 1) 0%, rgba(38, 112, 161, 1) 100%);
-        }
-
-        #sponsor {
-            background: linear-gradient(180deg, rgba(38, 112, 161, 1) 0%, rgba(24, 61, 126, 1) 100%);
-        }
-
-        #updates {
-            background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
-        }
-
-        #page4 {
-            background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
-        }
-
-
-        #PROJECT {
-            /*position: relative;
-            overflow: visible;
-            white-space: nowrap; */
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: lighter;
-            font-size: 30px;
-            color: rgba(255, 255, 255, 1);
-            margin-left: 34px;
-            margin-top: 20px;
-            padding-left: 40px;
-        }
-
-        #Line_1 {
-            fill: transparent;
-            stroke: rgba(255, 255, 255, 1);
-            stroke-width: 8px;
-            stroke-linejoin: miter;
-            stroke-linecap: butt;
-            stroke-miterlimit: 4;
-            shape-rendering: auto;
-        }
-
-        .Line_1 {
-            overflow: visible;
-            position: relative;
-            width: 570px;
-            height: 8px;
-            /*left: 195.5px;
-            top: 320.5px;
-            transform: matrix(1, 0, 0, 1, 0, 0);*/
-        }
-
-        #OUR_BACHELOR_PROJECT_2020_THIS {
-            position: relative;
-            overflow: visible;
-            white-space: nowrap;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 40px;
-            color: rgba(255, 255, 255, 1);
-        }
-
-        #Path_1 {
-            fill: rgba(255, 255, 255, 1);
-        }
-
-
-        .Path_1 {
-            overflow: visible;
-            position: absolute;
-            width: 800px;
-            height: auto;
-            top: 0%;
-            right: 0%;
-            z-index: 2;
-        }
-
-        #Image_1 {
-            /*
-            mix-blend-mode: multiply;
-            position: absolute;
-            right: 5%;
-            top: 25%;
-            z-index: 3;
-            overflow: visible;
-            */
-            position: relative;
-            margin-left: 0;
-            left: 70%;
-            top: 10%;
-
-        }
-
-        #FLYING_EAGLE {
-            position: relative;
-            overflow: visible;
-            white-space: nowrap;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 60px;
-            color: rgba(255, 255, 255, 1);
-        }
-
-        /* HEADER NAVBAR */
-        header {
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-            position: fixed;
-            width: 100vw;
-            top: 0px;
-            z-index: 5;
-            background: linear-gradient(315deg, rgba(16, 27, 61, 1) 0%, rgba(24, 61, 126, 1) 100%);
-        }
-
-        nav {
-            min-height: 10vh;
-            margin: auto;
-            width: 60%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.5rem;
-            flex: 1;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Line */
-        .line {
-            position: absolute;
-            z-index: -2;
-            background: #0DAFB2;
-            transition: all 0.5s ease;
-
-        }
-
-        #sponsor_divider {
-            fill: transparent;
-            stroke: rgba(255, 255, 255, 1);
-            stroke-width: 6px;
-            stroke-linejoin: miter;
-            stroke-linecap: butt;
-            stroke-miterlimit: 4;
-            shape-rendering: auto;
-        }
-
-
-
-        .sponsor_divider {
-            transform: matrix(1, 0, 0, 1, 0, 0);
-            height: auto;
-            width: 10%;
-        }
-
-        /*Hidding navbar*/
-        .hidden {
-            display: None;
-        }
-
-        .splashcontainer {
-            position: relative;
-            overflow: hidden;
-            outline: auto;
-        }
-
-        .splash {
-            position: absolute;
-            right: -0%;
-            top: 0%;
-            height: 110%;
-            transform: translate(-0%, -0%);
-            outline: auto;
-        }
-    </style>
+    <title>Group 1: Icarus</title>
 </head>
 
 <body class="h-100">
-    <header id="navbar" class="hidden">
-        <nav>
-            <ul>
-                <li><a data-page="home" href="#">HOME</a></li>
-                <li><a data-page="project" href="#">PROJECT</a></li>
-                <li><a data-page="updates" href="#">UPDATES</a></li>
-                <li><a data-page="about us" href="#">ABOUT US</a></li>
-                <li><a data-page="contact" href="#">CONTACT</a></li>
+    <header>
+        <nav class="container-fluid d-flex justify-content-center">
+            <ul class="d-flex justify-content-between px-0" style="max-width: 500px;">
+                <li class="nav-item"><a class="nav-link p-0 py-2" data-page="home" href="#">HOME</a></li>
+                <li class="nav-item"><a class="nav-link p-0 py-2" data-page="project" href="#project">PROJECT</a></li>
+                <li class="nav-item"><a class="nav-link p-0 py-2" data-page="updates" href="#updates">UPDATES</a></li>
+                <li class="nav-item"><a class="nav-link p-0 py-2 " data-page="aboutus" href="#aboutus">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link p-0 py-2 " data-page="contact" href="#contact">CONTACT</a></li>
                 <div class="line"></div>
             </ul>
         </nav>
     </header>
 
     <main class="h-100">
-        <section id="home" class="h-100">
-            <div class="row h-100">
-                <div class="col-6 col-xl-6 d-flex h-100">
-                    <div id="PROJECT" class="col-lg-6 justify-content-center align-self-center ">
-                        <span>PROJECT</span>
-                        <h1 id="FLYING_EAGLE">FLYING EAGLE</h1>
-                        <svg class="Line_1" viewBox="0 0 583 8">
-                            <path id="Line_1" d="M 0 0 L 583 0">
-                            </path>
-                        </svg>
-                        <div id="OUR_BACHELOR_PROJECT_2020_THIS">
-                            <span>OUR BACHELOR PROJECT 2020,<br />THIS PROJECT HAS BEEN DRONED</span>
+
+
+        <section id="home" class="container-fluid d-flex">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div class="d-flex justify-content-center align-self-stretch" style="width: 100%;">
+                <div class="row mt-4 d-flex justify-content-around align-items-center align-self-stretch">
+                    <div class="order-xl-2 col-12 col-md-8 col-xl-6">
+                        <img src="img/ic3.png" class="img-fluid d-block">
+                    </div>
+                    <div class="order-xl-1 col-xl-6 ">
+                        <div class="text-center align-items-center align-self-stretch d-flex flex-column">
+                            <div>
+                                <h1 class="align-self-start" id="PROJECT_TEXT">PROJECT</h1>
+                            </div>
+                            <div>
+                                <h2 class="align-self-center" id="PROJECT_NAME">ICARUS</h2>
+                            </div>
+                            <div>
+                                <h2 class="align-self-end" id="PROJECT_UNDERTEXT">Breaking Limits</h2>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="project" class="container-fluid d-flex justify-content-center">
+
+            <div class="row px-5 mx-3 py-4 max-1200" style="min-height: 100vh;">
+
+                <div class="col-12 col-md-6 ">
+                    <h1 class="text-white display-3">PROJECT</h1>
+
+                    <span id="text_project" class="text-white mt-4">
+                        ICARUS is a bachelor group at the University of South-Eastern Norway.
+                        In collaboration with FFI, our goal is to investigate and study
+                        how the angle of attack affects the aerodynamics and flight time
+                        of UAVs.
+
+
+                    </span>
+
+                </div>
+
+
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+
+                    <!--<img src="img/drone.png" class="img-fluid" width="307" height="240">-->
+                    <img src="img/drone.png" class="img-fluid">
+                </div>
+
+                <div id="" class="container-fluid py-4 text-center">
+                    <div class="row d-flex align-items-center">
+
+
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www.ffi.no/" class="my-4 d-flex align-items-center justify-content-center">
+                                <img id="FFI_NEG" class="img-fluid " src="img/FFI_logo_negativ.png">
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <a href="https://www.usn.no/" class="my-4 d-flex align-items-center justify-content-center">
+                                <img id="USN_NEG" class="img-fluid " src="img/USN_logo_rgb_neg (1).png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="updates" class="container-fluid d-flex justify-content-center" style="min-height: 100vh;">
+            <div class="max-1200">
+                <div class="text-center">
+                    <h1 class="text-white display-3 pt-5">UPDATES</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 mx-auto">
+                        <ul class="timeline">
+
+                            <!--
+                            Item start
+                        -->
+                            <li class="timeline-item p-3">
+                                <div class="timeline-arrow"></div>
+                                <div class="card border-grey rounded-3">
+
+                                    <div class="card-header">
+
+                                        <span class="text-muted">
+                                            <box-icon type='regular' size="xs" name='time'></box-icon>
+                                            08 January, 2021
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <!-- <img src="img/ic2.png" class="img-fluid"> -->
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="card-body">
+                                                <h5 class="card-title">The project begins!</h5>
+
+                                                <p class="fw-light">
+                                                    We were lucky enough to get one of the most
+                                                    interesting projects we could have asked for,
+                                                    not only in terms of what we were to research, but we were
+                                                    also given freedom to do it in whatever way we wanted and
+                                                    were allowed to experiment with many different solutions.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--
+                            Item end
+                        -->
+
+                            <!--
+                            Item start
+                        -->
+                            <li class="timeline-item p-3">
+                                <div class="timeline-arrow"></div>
+                                <div class="card border-grey rounded-3">
+
+                                    <div class="card-header">
+
+                                        <span class="text-muted">
+                                            <box-icon type='regular' size="xs" name='time'></box-icon>
+                                            02 February, 2021
+                                        </span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <!-- <img src="img/ic2.png" class="img-fluid"> -->
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="card-body">
+                                                <h5 class="card-title">First Presentation!</h5>
+
+                                                <p class="fw-light">
+                                                    We presented the first presentation and got great feedback
+                                                    for how we should move forwards with the research.
+                                                    Now our plan is to make further improvements on
+                                                    our overall project management and to start working on physical
+                                                    experiments and tests.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--
+                            Item end
+                        -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="aboutus" class="container-fluid d-flex justify-content-center" style="min-height: 100vh;">
+            <div class="text-center max-1200">
+                <h1 class="text-white display-3 py-4">TEAM</h1>
+
+                <div class="row pt-2">
+                    <div class="col-12 col-md-4">
+                        <div class="flip-card">
+
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle pt-4" src="./img/kim.jpg">
+                                    <h1 class="card-title display-4 display-7 pt-2">Kim Andrew Hellevammen</h1>
+
+                                </div>
+
+                                <div class="flip-card-back d-flex flex-column">
+
+                                    <h1 class="mt-4 display-6 text-center">Mechanical Engineer</h1>
+                                    <p class="mt-4">PROJECT LEADER</p>
+                                    <div class="mt-auto">
+                                        <a href="https://www.linkedin.com/in/kim-hellevammen-805725139/"
+                                            class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+                                        <a href="https://www.instagram.com/mr_kimandrew/" class="col-6 mt-4 bx-md"><i
+                                                class='bx bxl-instagram bx-tada-hover'></i></a>
+
+                                        <a class="col-12" href="mailto: hellevammenkim@gmail.com"><button type="button"
+                                                class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="flip-card">
+
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle mt-4" src="./img/tobias.jpg">
+                                    <h1 class="card-title display-4 display-7 pt-2">Tobias Kjellstrøm</h1>
+                                </div>
+
+                                <div class="flip-card-back d-flex flex-column">
+                                    <h1 class="mt-4 display-6 text-center">Computer Engineer</h1>
+                                    <p class="mt-4">SOFTWARE ARCHITECT AND FINANCE MANAGER</p>
+                                    <div class="mt-auto">
+                                        <a href="https://www.linkedin.com/in/tobias-kjellstr%C3%B8m-b471a5171/"
+                                            class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+                                        <a href="https://www.instagram.com/tobiasskje/" class="col-6 mt-4 bx-md"><i
+                                                class='bx bxl-instagram bx-tada-hover'></i></a>
+
+                                        <a class="col-12" href="mailto: kjelltobias@gmail.com"><button type="button"
+                                                class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="flip-card">
+
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle mt-4" src="./img/steve_jobs.jpg">
+                                    <h1 class="card-title display-4 display-7 pt-2">Salar Adel</h1>
+                                </div>
+
+                                <div class="flip-card-back d-flex flex-column">
+
+                                    <h1 class="mt-4 display-6 text-center">Computer Engineer</h1>
+                                    <p class="mt-4">SOFTWARE ARCHITECT AND RISK RESPONSIBLE</p>
+                                    <div class="mt-auto">
+                                        <a href="https://www.linkedin.com/in/salar-adel-4ba03016a/"
+                                            class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+                                        <a hreft="https://www.instagram.com/salaradel/" class="col-6 mt-4 bx-md"><i
+                                                class='bx bxl-instagram bx-tada-hover'></i></a>
+
+                                        <a class="col-12" href="mailto: salaradel4@gmail.com"><button type="button"
+                                                class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="flip-card">
+
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle mt-4" src="./img/mils.png">
+                                    <h1 class="display-4 display-7 ">Nils Øines</h1>
+
+                                </div>
+
+                                <div class="flip-card-back d-flex flex-column">
+                                    <h1 class="mt-4 display-6 display-7 text-center">Mechanical Engineer</h1>
+                                    <p class="mt-4">REQUIREMENTS MANANAGER</p>
+                                    <div class="mt-auto">
+                                        <a hreft="https://www.linkedin.com/in/nils-%C3%B8ines-1b3875160/"
+                                            class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+                                        <a href="https://www.instagram.com/nilsoines/" class="col-6 mt-4 bx-md"><i
+                                                class='bx bxl-instagram bx-tada-hover'></i></a>
+
+                                        <a class="col-12" href="mailto: noines@live.no"><button type="button"
+                                                class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="flip-card">
+
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle mt-4" src="./img/papi.jpg">
+                                    <h1 class="card-title display-4 pt-2 px-2 display-7 ">Javier Sossa</h1>
+                                </div>
+
+                                <div class="flip-card-back d-flex flex-column">
+                                    <h1 class="mt-4 display-6 display-7 text-center">Electrical Engineer</h1>
+                                    <p class="mt-4">HARDWARE ARCHITECT</p>
+                                    <div class="mt-auto">
+                                        <a href="https://www.linkedin.com/in/javier-alvarez-sossa-846a571b4/"
+                                            class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+                                        <a href="https://www.instagram.com/javiso_/" class="col-6 mt-4 bx-md"><i
+                                                class='bx bxl-instagram bx-tada-hover'></i></a>
+
+                                        <a class="col-12" href="mailto:javieralvarez98@outlook.com"><button
+                                                type="button" class="btn btn-lg btn-primary"
+                                                disabled>CONTACT</button></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="flip-card">
+
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img class="img-fluid rounded-circle" src="./img/shalil.jpg">
+                                    <h1 class="card-title display-4 pt-2 display-7 ">Shakil Masood</h1>
+                                </div>
+
+                                <div class="flip-card-back d-flex flex-column">
+
+                                    <h1 class="mt-4 display-6 display-7 text-center">Electrical Engineer</h1>
+                                    <p class="mt-4">HARDWARE ARCHITECT AND TEST MANAGER</p>
+                                    <div class="mt-auto">
+                                        <a href="https://www.linkedin.com/in/shakil-masood-a2972a180/"
+                                            class="col-6 mt-4 bx-md"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+                                        <a href="https://www.instagram.com/shaq_0307/" class="col-6 mt-4 bx-md"><i
+                                                class='bx bxl-instagram bx-tada-hover'></i></a>
+
+                                        <a class="col-12" href="mailto: shakilno3@gmail.com"><button type="button"
+                                                class="btn btn-lg btn-primary" disabled>CONTACT</button></a>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="container-fluid d-flex justify-content-center" style="min-height: 100vh;">
+
+            <div class="text-center row flex-grow-1 align-content-between max-1200">
+                <h1 class="col-12 text-white display-3 py-4">CONTACT</h1>
+                <div class="col-12 align-items-center">
+                    <div class="row ">
+                        <div class="col-12 col-md-4 pt-4 ">
+                            <a href="https://www.instagram.com/icarus_usn/">
+
+                                <img src="img/instagram-color.svg" class="pt-4" width="108" height="108">
+
+                            </a>
+                            <h2 class="text-white display-6 pt-2">INSTAGRAM</h2>
+                        </div>
+
+                        <div class="col-12 col-md-4 pt-4">
+                            <a href="https://twitter.com/projecticarus6">
+                                <img src="./img/twitter.svg" class="pt-4" width="108" height="108">
+
+                            </a>
+
+                            <h2 class="text-white display-6 pt-2">TWITTER</h2>
+
+                        </div>
+
+                        <div class="col-12 col-md-4 pt-4">
+                            <a href="mailto: projecticarususn@gmail.com">
+                                <img src="img/email.svg" class="pt-4" width="108" height="108">
+
+                            </a>
+
+                            <h2 class="text-white display-6 pt-2">MAIL</h2>
                         </div>
                     </div>
                 </div>
 
-                <div class="col col-xl-6 d-none d-xl-block">
-                    <div class="splashcontainer">
-                        <img class="img-fluid float-end" id="Image_1" src="img/Image_1.png"
-                            srcset="img/Image_1.png 1x, img/Image_1@2x.png 2x">
-                    </div>
-                    <!--<svg class="Path_1 img-fluid float-end" viewBox="1075.547 -228.643 882.263 1362.903">
-                            <path id="Path_1"
-                                d="M 1635.044921875 -176.4518280029297 C 1635.044921875 -176.4518280029297 1349.838623046875 -334.0596923828125 1385.748046875 -101.5028991699219 C 1421.6572265625 131.0538635253906 1125.471435546875 59.52488708496094 1082.722412109375 341.6709594726563 C 1039.97265625 623.8172607421875 1202.4208984375 541.7381591796875 1197.291015625 829.01416015625 C 1192.1611328125 1116.290771484375 1615.505004882813 1134.260009765625 1690.933471679688 1134.260009765625 C 1766.362060546875 1134.260009765625 1957.810302734375 990.0810546875 1957.810302734375 990.0810546875 L 1957.810302734375 -150.8021850585938 L 1635.044921875 -176.4518280029297 Z">
-                            </path>
-                        </svg>
 
-                        <svg class="splash" viewBox="1075.547 -228.643 882.263 1362.903">
-                            <path id="Path_1"
-                                d="M 4635.044921875 -176.4518280029297 C 435.044921875 -576.4518280029297 
-                                1349.838623046875 -534.0596923828125 1385.748046875 -301.5028991699219 C 
-                                1421.6572265625 131.0538635253906 1125.471435546875 59.52488708496094 
-                                1082.722412109375 341.6709594726563 C 1039.97265625 623.8172607421875 
-                                1202.4208984375 541.7381591796875 1197.291015625 829.01416015625 C 
-                                1192.1611328125 1116.290771484375 1615.505004882813 2134.260009765625 4690.933471679688 
-                                1134.260009765625 C 1766.362060546875 1134.260009765625 3957.810302734375 1990.0810546875 
-                                1957.810302734375 990.0810546875 L 1957.810302734375 -1150.8021850585938 L 1635.044921875 -176.4518280029297 Z">
-                            </path>
-                        </svg>-->
-                    <div class="splashcontainer">
-                        <svg class="splash" xmlns="http://www.w3.org/2000/svg" width="1253.591" height="1362.902"
-                            viewBox="-550 125 1253.591 1362.902">
-                            <path id="Path_1" data-name="Path 1"
-                                d="M1870.527-176.452S1465.283-334.06,1516.306-101.5,1146.484,59.525,1085.742,341.671s170.077,200.067,162.788,487.343,594.232,305.246,701.407,305.246,379.2-144.179,379.2-144.179V-150.8Z"
-                                transform="translate(-1075.547 228.643)" fill="#fff" />
-                        </svg>
-                    </div>
-                </div>
-
-
-            </div>
-
-            </div>
-        </section>
-
-
-        <section id="project" class="h-100">
-
-            <!--Må endre på style her, siden det fungerer ikke når nettsiden blir mindre-->
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="flex-md-row mb-10 h-md-250 col-md-10 blog-main">
-                        <img src="img/PngItem_1979490.png" style="margin-top:20%; margin-left: 5%;">
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="flex-md-row mb-10 h-md-250 col-md-10 blog-main" style="margin-top:10%;">
-
-                        <h1>
-                            <span
-                                style="color: white; font-size: 60px; border-bottom: 5px solid #0DAFB2;">PROJECT</span>
-                        </h1>
-                        <p>
-                            <span style="color: white; font-size: 45px;">
-                                Lorem Ipsum is simply dummy text of
-                                the printing and typesetting industry. Lorem
-                                Ipsum has been the industry's standard dummy
-                                text ever since the 1500s, when an unknown printer
-                                took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries,
-                                but also the leap into electronic typesetting, remaining
-                                essentially unchanged. It was popularised in the 1960s
-                                with the release of Letraset sheets containing Lorem Ipsum
-                                passages, and more recently with desktop publishing software
-                                like Aldus PageMaker including versions of Lorem Ipsum.
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-
-        <div id="sponsor" class="container-fluid">
-            <div class="row d-flex justify-content-center text-center">
-                <div class="col-5">
-                    <img id="FFI_NEG" class="img-fluid" src="img/FFI_logo_negativ.png">
-                </div>
-
-                <div class="col-1">
-                    <svg class="sponsor_divider" viewBox="0 0 6 195">
-                        <path id="sponsor_divider" d="M 0 195 L 0 0">
-                        </path>
-                    </svg>
-                </div>
-                <div class="col-5">
-                    <img id="USN_NEG" class="img-fluid" src="img/g16.png" srcset="img/g16.png 1x, img/g16@2x.png 2x">
+                <div class="col-12 small text-white align-self-end p-4">
+                    Copyright © 2021 - PROJECT ICARUS - USN Kongsberg - V.1
                 </div>
             </div>
 
 
-        </div>
-
-        <section id="updates" class="h-100">
-
-
         </section>
 
-        <section id="about us" class="h-100">
-            <h1>
-                <span style="color: white; font-size: 60px; border-bottom: 5px solid #0DAFB2;">ABOUT US</span>
-            </h1>
-
-        </section>
 
     </main>
-
 
     <script src="nav.js"></script>
 
 </body>
-
-
 
 </html>
